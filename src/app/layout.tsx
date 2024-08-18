@@ -20,6 +20,11 @@ export const viewport = {
   maximumScale: 1,
 };
 
+interface themeColor {
+  media: string;
+  color: string;
+}
+
 export const themeColor = [
   { media: "(prefers-color-scheme: light)", color: "#fafafa" },
   { media: "(prefers-color-scheme: dark)", color: "#151515" },
