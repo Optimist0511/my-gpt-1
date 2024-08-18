@@ -8,27 +8,21 @@ import { type Metadata } from "next";
 export const metadata: Metadata = {
   title: "NextChat",
   description: "Your personal ChatGPT Chat Bot.",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#fafafa" },
+    { media: "(prefers-color-scheme: dark)", color: "#151515" },
+  ],
   appleWebApp: {
     title: "NextChat",
     statusBarStyle: "default",
   },
 };
 
-export const viewport = {
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 1,
-};
-
-interface themeColor {
-  media: string;
-  color: string;
-}
-
-export const themeColor = [
-  { media: "(prefers-color-scheme: light)", color: "#fafafa" },
-  { media: "(prefers-color-scheme: dark)", color: "#151515" },
-];
 
 
 export default function RootLayout({
